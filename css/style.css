@@ -310,7 +310,7 @@ header{
     grid-column-gap: 10px;
 }
 
-.ux_image > img{
+.ux_image img{
     overflow: hidden;
     width: 200px;
     height: 200px;
@@ -323,10 +323,21 @@ header{
     justify-content: center;
 }
   
-.car_image > img{
+.car_image img{
     margin: 10px;
     height: 300px;
 }
+
+.car_image img:nth-child(odd):hover{
+    filter:drop-shadow(8px 8px 10px gray);
+    transform: rotateY(180deg);
+}
+
+.car_image img:nth-child(even):hover{
+    filter:opacity(50%);
+    border: 2px solid black;
+}
+
 
 @media screen and (min-width: 450) {
 
