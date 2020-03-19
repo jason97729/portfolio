@@ -330,12 +330,8 @@ header{
     }
 }
 
-
-
-
 @media screen and (prefers-reduced-motion: reduce){
-    #logo{
+    h1{
       animation: none;
-  
     }
 }
